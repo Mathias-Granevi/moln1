@@ -1,0 +1,2 @@
+Sql-databasen kostar 36.91 kr, vilket blir det som kostar mest. Därefter kommer DB-lagringen på 17.53 kr och till sist det virtuella nätverket på 10.75 kr.
+Den virtuella maskinen kostar ingenting och det beror på att man som student får gratistimmar att använda.
