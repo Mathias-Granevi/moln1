@@ -8,7 +8,7 @@ queue_name = "myqueue"
 connection_string = os.environ.get("CONNECTION_STRING")
 
 # Azure SQL Database configuration
-sql_server = 'de23testing2.database.windows.net'
+sql_server = os.environ.get("SQLSERVER")
 database = 'pipelineDB'
 username = 'mathias'
 password = os.environ.get("DATABASE_PASSWORD")
