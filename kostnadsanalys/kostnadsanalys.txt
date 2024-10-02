@@ -1,0 +1,21 @@
+Efter att ha gjort beräkningar i Azure Pricing Calculator gällande databasen,
+uppskattar jag att den totala månadskostnaden för att hantera en 10 TB databas i 
+Azure kommer att hamna runt 6311 dollar i månaden. 
+Jag har då valt:
+Service tier: Hyperscale
+Instance: 20 vCores
+Average backup size during retention period: 3TB
+
+Ha i åtanke att detta bara är en hypotetisk beräkning och eventuella extrakostnader kan förekomma
+beroende på vad som kommer att krävas. Till exempel högre prestanda eller större backuper.
+
+Jag har försökt att inte nyttja för många resurser. Det betyder att jag har valt en struktur 
+som gör en rimlig kompromiss mellan prestanda och kostnad 
+och som inte gör den ena till en nackdel för den andra.
+Eftersom de flesta SQL-databaser i Azure begränsar den maximala
+storleken till 4 TB, har jag  därför valt "Hyperscale" versionen av Azure SQL Database. 
+Det alternativet är skapat för databaser med maximalt lagringsbehov och därför kan 
+datastorleken gå över 10 TB utan att prestandan försämras. Det finns också många andra fördelar 
+med Hyperscale som till exempel snabba säkerhetskopieringar och återställningar, och
+möjliggörande av Elastic Pool utan att behöva göra något manuellt för att öka
+lagringskapaciteten eller beräkningsförmågan, vilket är viktigt för lagring av stora mängder data.
