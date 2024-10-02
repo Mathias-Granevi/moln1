@@ -1,12 +1,12 @@
 import pandas as pd
 import json
 
-# Step 1: Load CSV file into a DataFrame
+# Load CSV file into a DataFrame
 def load_csv(csv_file):
     df = pd.read_csv(csv_file)
     return df
 
-# Step 2: Clean the DataFrame
+# Clean the DataFrame
 def clean_data(df):
     # Fill missing values (NaNs) with 0
     df.fillna(0, inplace=True)
@@ -21,7 +21,7 @@ def clean_data(df):
 
     return df
 
-# Step 3: Save the cleaned DataFrame to a JSON file
+# Save the cleaned DataFrame to a JSON file
 def save_to_json(df, output_file):
     # Convert the DataFrame to a dictionary and then save it as JSON
     data_dict = df.to_dict(orient='records')  # Convert DataFrame to list of dictionaries
